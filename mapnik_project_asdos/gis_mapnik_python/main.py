@@ -22,10 +22,10 @@ s.rules.append(r) #mendlakarasikan var "r"  ke var "s" nb.style nya adalah var "
 m.append_style('gaya1',s) #var "gaya1" adalah nama style map kamu
 
 #MEMBUAT SUMBERDATA PETA 
-ds = mapnik.Shapefile(file = "data shp/data1/ne_110m_admin_0_countries.shp") #nama sumber data map kamu di direktori misalnya "ne_110m_admin_0_countries.shp"
+ds = mapnik.Shapefile(file = "shp/ne_110m_admin_0_countries.shp") #nama sumber data map kamu di direktori misalnya "ne_110m_admin_0_countries.shp"
 
 #MEMBUAT LAYER/LAPISAN
-layer = mapnik.Layer('layout1') #deklarasi layout map kamu adalah var "peta1"
+layer = mapnik.Layer('peta1') #deklarasi layout map kamu adalah var "peta1"
 layer.datasource = ds #deklarasi var "ds" adalah sumber data dr layout map
 layer.styles.append('gaya1')
 
